@@ -1,0 +1,331 @@
+<html>
+    <head>
+        <!-- Page Title -->
+
+        <title>Learning HTML</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Emblem.png">
+
+        <style>
+            #decLink{
+                text-decoration: none;
+                color: red;
+                font-size: 30px;
+            }
+            #decLink:hover{
+                color: yellow;
+            }
+            #decLink:active{
+                color: green;
+            }
+            #table1, #table1 th , #table1 td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            #table2{
+                width: 100%;
+                margin-top: 20px;
+            }
+            #table2, #table2 th , #table2 td{
+                border-style: dotted;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            #table3{
+                width: 100%;
+                margin-top: 50px;
+                border-collapse: collapse;
+            }
+            #table3 th , #table3 td{
+                padding: 10px;
+            }
+            #table3 tr:nth-child(even){
+                background-color: rgba(0, 204, 255, 0.2);
+            }
+            #table3 th:nth-child(even) , #table3 td:nth-child(even){
+                background-color: rgba(0, 204, 255, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Heading Tags -->
+
+        <div id="Headings">
+            <h1>Hello World!</h1>
+            <h2>Hello World!</h2>
+            <h3>Hello World!</h3>
+            <h4>Hello World!</h4>
+            <h5>Hello World!</h5>
+            <h6>Hello World!</h6>
+        </div>
+
+        <br>
+
+        <!-- paragraph -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni consequatur eius corrupti sit totam magnam omnis voluptas cumque harum?</p>
+
+        <pre>
+            Lorem ipsum dolor sit, 
+            
+            amet consectetur adipisicing elit. 
+            
+            Mollitia sequi quibusdam itaque 
+            
+            qui, minus saepe numquam!
+        </pre>
+
+        <!-- Style -->
+
+        <h1 style="font-family: cursive; font-size: 25px; background-color: black; color: white; text-align: center;">HTML</h1>
+
+        <br><br>
+
+        <!-- Formatting -->
+
+        <p><b>Bold Text</b></p>
+        <p><strong>Important text</strong></p>
+        <p><i>Italic Text</i></p>
+        <p><em>Emaphaized Text</em></p>
+        <p>My name is <mark>Sanjay</mark></p>
+        <p><del>Deleted text</del></p>
+        <p><ins>Inserted Text</ins></p>
+        <p>Sub<sub>scipt</sub> Text</p>
+        <p>Super<sup>scipt</sup> Text</p>
+
+        <br><br><br>
+
+        <!-- Quatation & Citation -->
+
+        <h2>CSS</h2>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ut possimus. In delectus fugit ducimus.</blockquote>
+        <br>
+
+        <p>HTML stands for <q>HyperText Markup Language</q></p>
+        <p><abbr title="Suppiy Chain Management">SCM</abbr></p>
+        <address>1A, MGR Nagar,
+            20<sup><th></th></sup> Street,
+            Karur - 639001
+        </address>
+        <br>
+
+        <p dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum voluptas similique vel atque porro.</p>
+        <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ut!</bdo>
+
+        <br>
+
+        <!-- colors -->
+
+        <h2 style="background-color: tomato; padding: 10px; margin-right: 90%;">Heading</h2>
+        <h3 style="background-color: rgb(124, 83, 76); padding: 10px; margin-right: 90%;">Heading</h3>
+        <h3 style="background-color: rgba(255, 99, 71, 0.2); padding: 10px; margin-right: 90%;">Heading</h3>
+        <h4 style="background-color: hsx(#5f5353); padding: 10px; margin-right: 90%;">Heading</h4>
+        <h3 style="background-color: hsl(0, 3%, 31%); padding: 10px; margin-right: 90%;">Heading</h3>
+        <h3 style="background-color: hsla(0, 3%, 31%, 0.2); padding: 10px; margin-right: 90%;">Heading</h3>
+        <br><br>
+
+        <!-- links -->
+
+        <a href="https://www.w3schools.com">w3schools</a><br><br>
+        <a href="https://www.w3schools.com" target="_blank">w3schools</a><br><br>
+        <a href="https://www.w3schools.com" target="_self">w3schools</a><br><br>
+        <a href="https://www.w3schools.com" target="_parent">w3schools</a><br><br>
+        <a href="https://www.w3schools.com" target="_top">w3schools</a><br><br>
+
+        <a href="https://www.google.com/">
+            <img src="https://pngimg.com/uploads/google/google_PNG19644.png" alt="It's an Google icon" height="200px" width="600px">
+        </a><br><br>
+
+        <a id="decLink" href="https://www.w3schools.com">w3schools</a><br><br>
+
+        <a href="#Headings">Jump to Headings</a><br><br>
+
+
+        <!-- Images -->
+
+        <img src="https://wallpaperset.com/w/full/c/9/0/522708.jpg" alt="It is an image" height="400px" width="600px"><br><br>
+
+        <img src="/Images/image.png" alt="It is a Cheetah Image" height="400px" width="600px"><br><br>
+
+        <img src="/Images/tiger.jpg" alt="Workplace" usemap="#workmap" height="400px" width="600px"><br><br>
+
+        <map id="workmap">
+            <area shape="rect" coords="84,94,270,350" alt="tiger website" href="tiger.html">
+        </map>
+
+        <picture>
+            <source media="(min-width: 600px)" srcset="/Images/image.png" height="400px" width="600px">
+            <source media="(min-width: 505px)" srcset="/Images/tiger.jpg" height="400px" width="600px">
+            <img src="https://wallpaperset.com/w/full/c/9/0/522708.jpg" height="400px" width="600px">
+        </picture><br><br>
+
+        <!-- Tables -->
+
+            <!-- table1 -->
+
+        <table id="table1">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pavan</td>
+                <td rowspan="3">R&N</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sridevi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sanjay</td>
+            </tr>
+        </table>
+
+            <!-- table2 -->
+
+
+        <table id="table2">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pavan</td>
+                <td>R&N</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sridevi</td>
+                <td>R&N</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sanjay</td>
+                <td>R&N</td>
+            </tr>
+        </table>
+
+            <!-- table3 -->
+
+        <table id="table3">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>RM</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pavan</td>
+                <td>Neha Komatla</td>
+                <td>R&N</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sridevi</td>
+                <td>Goutham Thilavakumar</td>
+                <td>R&D</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sanjay</td>
+                <td>Jai Prakash</td>
+                <td>R&N</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sandhya</td>
+                <td>Anand</td>
+                <td>OTS</td>
+            </tr>
+        </table><br><br>
+
+        <!-- List -->
+
+        <ul>
+            <li>Block-Level Element</li>
+            <li>Lnline Element</li>
+        </ul><br><br>
+
+        <ul style="list-style-type: circle;">
+            <li>Block-Level Element
+                <ul style="list-style-type: square;">
+                    <li>h1 to h6</li>
+                    <li>p</li>
+                    <li>address</li>
+                </ul>
+            </li>
+            <li>Inline Element
+                <ul>
+                    <li>span</li>
+                    <li>em</li>
+                    <li>a</li>
+                </ul>
+            </li>
+        </ul><br><br>
+
+        <ol>
+            <li>Block-Level Element</li>
+            <li>Inline Element</li>
+        </ol><br><br>
+
+        <ol type="A">
+            <li>Block-Level Element
+                <ol type="I">
+                    <li>h1 to h6</li>
+                    <li>p</li>
+                    <li>address</li>
+                </ol>
+            </li>
+            <li>Inline Element
+                <ol type="i">
+                    <li>span</li>
+                    <li>em</li>
+                    <li>a</li>
+                </ol>
+            </li>
+        </ol><br><br>
+
+        <!-- Div -->
+
+        <div style="background-color: aquamarine; padding: 10px; width: 300px; font-family: cursive;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p> 
+        </div>  
+        
+        <div style="margin-top: 50px; display: flex;">
+            <div style="background-color: aquamarine; padding: 10px; width: 300px; font-family: cursive;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p> 
+            </div> 
+            <div style="background-color:thistle; padding: 10px; width: 300px; font-family: cursive;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p> 
+            </div> 
+            <div style="background-color: burlywood; padding: 10px; width: 300px; font-family: cursive;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p> 
+            </div> 
+        </div>
+
+        <!-- iframe -->
+
+        <iframe src="tiger.html" height="500" width="500" title="Iframe Example" style="margin-top: 50px;"></iframe><br><br>
+
+        <iframe src="" height="500" width="500" name="tiger" title="Iframe Example" style="margin-top: 50px;"></iframe>
+        <p style="font-size: 25px;"><a href="tiger.html" target="tiger">Clike Here</a></p>
+
+        
+    </body>
+</html>
