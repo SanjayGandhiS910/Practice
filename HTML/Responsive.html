@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .menu a {
+            background-color: lightgray;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: lightgray;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 620px) {
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://wallpaperaccess.com/full/4299503.jpg" width="100%">
+
+
+    <picture>
+        <source media="(min-width:600px)" srcset="https://wallpaperaccess.com/full/159423.jpg" height="600px" width="800px">
+        <source media="(min-width:500px)" srcset="/Images/tiger.jpg" width="700px" height="500px">
+        <img src="https://wallpaperaccess.com/full/121194.jpg" width="600px" height="350px">
+    </picture>
+
+    <div style="background-color:lightgray;padding:15px;text-align:center;margin-top: 30px;">
+        <h1>Hello World</h1>
+      </div>
+      
+      <div style="overflow:auto">
+        <div class="menu">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      
+        <div class="main">
+          <h2>Lorum Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+      
+        <div class="right">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+      </div>
+      
+      <div style="background-color:lightgray;text-align:center;padding:10px;margin-top:7px;">copyright</div>
+</body>
+</html>

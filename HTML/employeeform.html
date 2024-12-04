@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: cursive;
+            font-size: 15px;
+        }
+        img{
+            position:absolute;
+            filter: blur(8px);
+            z-index: 1;
+        }
+        form{
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.555);
+            color: white;
+            padding: 50px;
+            margin-left: 28%;
+            margin-top: 30px;
+            border-radius: 10px;
+            z-index: 2;
+        }
+        form input{
+            background-color: rgba(0, 0, 0, 0.406);
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        form textarea{
+            background-color: rgba(0, 0, 0, 0.406);
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://wallpapercave.com/wp/wp5306486.jpg" alt="" >
+    <form action="" style="width: 40%; ">
+        <label for="fname">First Name : </label>
+        <input type="text" placeholder="First Name"><br><br>
+        <label for="lname">Last Name : </label>
+        <input type="text" placeholder="Last name"><br><br>
+        <label for="EmpId">Employee Id : </label>
+        <input type="text" placeholder="Employee Id"><br><br>
+        <label for="Gender">Gender : </label>
+        <input type="radio" value="Male" name="g" checked><label for="Male">Male</label>
+        <input type="radio" value="Female" name="g"><label for="Female">Female</label><br><br>
+        <label for="Team">Team : </label> 
+        <input type="text" value="R&D" disabled><br><br>
+        <label for="Jd">Joining Date : </label>
+        <input type="date" ><br><br>
+        <label for="Address">Address</label><br>
+        <textarea name="Address" id="Address" rows="5" cols="31"></textarea><br><br>
+        <label for="PhoneNo">Phone Number : </label>
+        <input type="number" pattern="[6-9{1}][0-9]{9}"><br><br>
+        <label for="Photo">Please upload your photo : </label><br>
+        <input type="file"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <style>
+        .form{
+            border: 2px solid gray;
+            margin-top: 20px;
+            padding: 10px 100px 10px 100px;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+        <fieldset>
+            <legend>Form</legend>
+        <label for="fname">First Name : </label>
+        <input type="text">
+        <br><br>
+        <label for="lname">last name : </label>
+        <input type="text">
+        <br><br><label>Email : </label>
+        <input type="email"><br><br>
+        <label>Create Password : </label>
+        <input type="password"><br><br>
+        <label for="CCars">Choose Car : </label>
+        <select name="Cars" id="">
+            <option value="Tesla">Tesla</option>
+            <option value="Honda">Honda</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+        </select><br><br>
+        <label for="CCars">Choose Car : </label>
+        <input type="text" list="Cars">
+        <datalist name="Cars" id="Cars">
+            <option value="Tesla">Tesla</option>
+            <option value="Honda">Honda</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+        </datalist><br><br>
+        <input type="submit">
+        <br><br>
+        <label for="Text">Text Area</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit">
+        </fieldset>
+    </form>
+
+    <form action="" class="form">
+        <label for="FavCars">Favorites Car : </label><br>
+        <input type="radio" value="Audi" name="car">
+        <label for="Audi">Audi</label><br>
+        <input type="radio" value="BMW" name="car">
+        <label for="BMW">BMW</label><br>
+        <input type="radio" value="Tesla" name="car" checked>
+        <label for="Tesla">Tesla</label>
+
+        <br><br>
+
+        <label for="ProLang">Programmimg Language : </label><br>
+        <input type="checkbox" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        <input type="checkbox" value="Java">
+        <label for="Java">Java</label><br>
+        <input type="checkbox" value="Python">
+        <label for="Python">Python</label>
+
+        
+    </form>
+
+    <form action="" class="form">
+        <label for="">Date : </label>
+        <input type="date" name="" id=""><br><br>
+        <label for="">Date & Time : </label>
+        <input type="datetime-local" name="" id=""><br><br>
+        <label>Color : </label>
+        <input type="color"><br><br>
+        <label>file : </label>
+        <input type="file"><br><br>
+        <label>Telephone Number : </label>
+        <input type="tel"><br><br>
+        <label>Time : </label>
+        <input type="time"><br><br>
+        <label>Level : </label>
+        <input type="range"><br><br>
+        <input type="reset"><br><br>
+        <label>Week : </label>
+        <input type="week"><br><br>
+    </form>
+
+</body>
+</html>
