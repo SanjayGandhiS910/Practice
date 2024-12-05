@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="intro.css">
+    <style>
+
+        *{
+            font-family: cursive;
+        }
+
+        /* Internal CSS */
+
+        h1{
+            color: rgb(104, 188, 188);
+        }
+
+        /* id selector */
+
+        #color h1{
+            color: rgb(3, 153, 103);
+            margin-right: 20px;
+        }
+        #color h2{
+            background: hsla(21, 20%, 20%, 0.349);
+            width: 5%;
+            margin-right: 20px;
+        }
+        #color h3{
+            border: 1px solid blue;
+            width: 5%;
+        }
+
+        /* class selector */
+
+        .bgcol h1{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+        .bgcol p{
+            background-color: cadetblue;
+            padding: 10px;
+            margin-top: -23px;
+        }
+
+        .bgimg{
+            background: url("https://th.bing.com/th/id/OIP.l0BocQVygMB5AbN_B5xG5QHaE8?rs=1&pid=ImgDetMain") no-repeat;
+            width: 30%;
+            height: 300px;
+            padding: 10px;
+            color: rgb(62, 37, 37);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+     
+    <h1 style="color: aquamarine;">CSS Introduction</h1>
+
+    <!-- Color -->
+
+    <div id="color">
+        <h1>Red</h1>
+        <h2>Green</h2>
+        <h3>Blue</h3>
+    </div>
+
+    <!-- BackGround color & image -->
+
+    <div class="bgcol">
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero consequuntur nihil eius. Dolore nesciunt aliquid exercitationem explicabo impedit accusantium!</p>
+    </div>
+
+    <div class="bgimg">
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus odit repudiandae veniam tempora quibusdam! Consequatur rem esse itaque minima cumque quisquam assumenda voluptates, nesciunt, ipsa dignissimos et, laborum architecto neque doloremque officia tenetur! Id repellat esse, suscipit laboriosam reprehenderit molestiae vero harum assumenda rem illum eum, maxime eligendi dolorum deserunt. Ipsum necessitatibus quae magni eligendi voluptatibus ex quos vero veritatis?</p>
+    </div>
+
+    <div class="bgimg1">
+        <div class="swhite">
+            <h1>HTML</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
+                placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
+                perspiciatis fugiat, molestias sed voluptates iste qui error ducimus laboriosam 
+                optio vel repellendus? Voluptatibus consectetur saepe exercitationem veritatis 
+                nesciunt quos id, iusto voluptas quisquam tempora cupiditate, eos excepturi! Nostrum 
+                reprehenderit, veritatis excepturi voluptas labore velit sed, eveniet facere nulla qui 
+                laboriosam debitis? Magni quod iste vero dicta vitae perspiciatis saepe qui optio 
+                provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
+                ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
+                quod repellat eum tempora nisi?
+            </p>
+        </div>
+        <div></div>
+        <div class="swhite">
+            <h1>CSS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
+                placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
+                perspiciatis fugiat, molestias sed voluptates iste qui error ducimus laboriosam 
+                optio vel repellendus? Voluptatibus consectetur saepe exercitationem veritatis 
+                nesciunt quos id, iusto voluptas quisquam tempora cupiditate, eos excepturi! Nostrum 
+                reprehenderit, veritatis excepturi voluptas labore velit sed, eveniet facere nulla qui 
+                laboriosam debitis? Magni quod iste vero dicta vitae perspiciatis saepe qui optio 
+                provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
+                ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
+                quod repellat eum tempora nisi?
+            </p>
+        </div>
+        <div></div>
+        <div class="swhite">
+            <h1>JS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
+                placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
+                perspiciatis fugiat, molestias sed voluptates iste qui error ducimus laboriosam 
+                optio vel repellendus? Voluptatibus consectetur saepe exercitationem veritatis 
+                nesciunt quos id, iusto voluptas quisquam tempora cupiditate, eos excepturi! Nostrum 
+                reprehenderit, veritatis excepturi voluptas labore velit sed, eveniet facere nulla qui 
+                laboriosam debitis? Magni quod iste vero dicta vitae perspiciatis saepe qui optio 
+                provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
+                ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
+                quod repellat eum tempora nisi?
+            </p>
+        </div>
+    </div>
+
+    <!-- Border Margin Padding outline-->
+
+    <div class="border">
+        <h1 class="head1">Heading</h1>
+        <h1 class="head2">Heading</h1>
+        <h1 class="head3">Heading</h1>
+        <h1 class="head4">Heading</h1>
+        <h1 class="head5">Heading</h1>
+        <h1 class="head6">Heading</h1>
+    </div>
+
+    <!-- Text Styles -->
+
+    <div class="textstyle">
+        <h1>html</h1>
+        <h2>CSS</h2>
+        <h3>java script</h3>
+        <p id="ts">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
+            placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
+            perspiciatis fugiat, molestias sed voluptates iste qui error ducimus laboriosam 
+            optio vel repellendus? Voluptatibus consectetur saepe exercitationem veritatis 
+            nesciunt quos id, iusto voluptas quisquam tempora cupiditate, eos excepturi! Nostrum 
+            reprehenderit, veritatis excepturi voluptas labore velit sed, eveniet facere nulla qui 
+            laboriosam debitis? Magni quod iste vero dicta vitae perspiciatis saepe qui optio 
+            provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
+            ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
+            quod repellat eum tempora nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Accusamus laudantium vero harum praesentium quidem 
+        </p>
+
+        <br><br>
+
+        <p id="rev">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, esse!
+        </p>
+
+        <br><br>
+
+        <p id="str">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel officia velit, in 
+            ipsa veniam officiis quam. Reiciendis cum asperiores facilis tenetur illum veniam 
+            nisi libero praesentium, iusto porro. Tenetur perspiciatis voluptate deleniti aliquam 
+            voluptatum magni quasi soluta. Voluptatum, repudiandae libero.
+        </p>
+    </div>
+
+</body>
+</html>

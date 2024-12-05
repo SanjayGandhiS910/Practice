@@ -1,0 +1,128 @@
+
+/* External CSS */
+
+h1{
+    color: blueviolet;
+}
+
+.bgimg1{
+    background-image: url('https://wallpapercave.com/wp/wp6615594.jpg');
+    background-attachment: fixed;
+    border: 1px solid black;
+    margin-top: 60px;
+    color: aliceblue;
+}
+.bgimg1 div{
+    border: 1px solid black;
+    padding: 30px;
+    height: 100px;
+}
+.bgimg1 .swhite{
+    background-color: rgb(33, 33, 33);
+    border-color: gray;
+    border-style: groove;
+    height: 200px;
+}
+
+/* Border */
+
+.border .head1{
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+    outline-style: groove;
+    outline-color: black;
+    outline-width: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.border .head2{
+    border-style: groove;
+    border-color: lightblue;
+    border-width: 5px;
+    outline-style: inset;
+    outline-color: lightcoral;
+    outline-width: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.border .head3{
+    border-style: inset;
+    border-color: lightcoral;
+    border-width: 5px 10px 15px 20px;
+    outline-style: double;
+    outline-color: lightgreen;
+    outline-width: 5px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.border .head4{
+    border-style: solid;
+    border-color: lightgreen;
+    border-width: 5px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.border .head5{
+    border-style: solid;
+    border-color: lime;
+    border-width: 5px;
+    outline-style: dotted;
+    outline-color: gold;
+    outline-width: 5px;
+    outline-offset: 5px;
+    border-radius: 40px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+.border .head6{
+    border: 5px solid goldenrod;
+    margin: 50px 10px 15px 20px;
+    padding: 5px 10px 15px 20px;
+    outline: 5px outset lightpink;
+    outline-offset: 10px;
+}
+
+.textstyle{
+    margin-top: 30px;
+}
+.textstyle h1{
+    color: blueviolet;
+    text-align: center;
+    text-decoration-line: underline overline;
+    text-decoration-color: aqua;
+    text-transform: uppercase;
+}
+.textstyle h2{
+    text-align: left;
+    text-decoration-line: overline;
+    text-decoration-style: dotted;
+    text-transform: lowercase;
+}
+.textstyle h3{
+    text-align: right;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 5px;
+    text-transform: capitalize;
+}
+.textstyle #ts{
+    text-align-last: right;
+    text-indent: 40px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 40px;
+}
+
+.textstyle #rev{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.textstyle #str{
+    white-space: nowrap;
+}
