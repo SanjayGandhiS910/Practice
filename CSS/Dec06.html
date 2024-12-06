@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dec-06-2024</title>
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- icon link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .font .p1{
+            font-style: italic;
+            font-weight: bold;
+            font-variant: small-caps;
+            font-size: 20px;
+            margin-top: 130px;
+        }
+        .font .p2{
+            font-family: "Playwrite HR Lijeva", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .icons p{
+            font-size: 50px;
+            color: blueviolet;
+            cursor: pointer;
+        }
+        .icons button{
+            padding: 5px 15px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: wait;
+        }
+        #position{
+            background-color: aquamarine;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        #position2{
+            background-color: thistle;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+        }
+        .of{
+            background-color: violet;
+            padding: 10px;
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            float: left;
+        }
+        .of2{
+            background-color: lightgreen;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            float: left;
+        }
+        .of3{
+            background-color: lightslategray;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .float{
+            border: 5px solid greenyellow;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        .float img{
+            float: right;
+        }
+
+        .float::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .com1{
+            margin-top: 50px;
+        }
+        .com1 > p{
+            color: blue;
+        }
+        .com2{
+            margin-top: 50px;
+        }
+        .com2 + p{
+            color: blue;
+        }
+        .com3{
+            margin-top: 50px;
+        }
+        .com3 ~ p{
+            color: blue;
+        }
+        .com3 input:focus{
+            color: white;
+            background-color: coral;
+        }
+
+        .pseudo1{
+            margin-top: 50px;
+        }
+        .pseudo1 p::first-letter{
+            color: brown;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .pseudo2{
+            margin-top: 50px;
+        }
+        .pseudo2 p::first-line{
+            color: rebeccapurple;
+            font-weight: bold;
+        }
+        .pseudo2 p::selection{
+            color: white;
+            background-color: cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- Font -->
+
+    <div class="font">
+        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, numquam.</p>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, repellat.</p>
+    </div>
+
+    <!-- icons -->
+
+    <div class="icons">
+        <p><i class="fa-regular fa-envelope"></i> <i class="fa-brands fa-github"></i> <i class="fa-solid fa-truck-fast"></i> <i class="fa-solid fa-bug"></i></p>
+        <button>Wait</button>
+    </div>
+
+    <!-- Position -->
+
+    <div id="position">
+        <h1>JavaScript</h1>
+    </div>
+
+    <div id="position2">
+        <h1>CSS</h1>
+    </div>
+
+    <!-- Overflow -->
+
+    <div class="of">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti 
+            exercitationem quia earum eius nemo nihil voluptatibus animi necessitatibus odit, 
+            quis, voluptate assumenda accusamus ipsum numquam, corrupti recusandae accusantium 
+            officiis tempora placeat harum in quaerat. Perferendis eaque, quasi minus fugit, 
+            eum neque voluptate tenetur inventore reprehenderit iste molestias odio architecto.
+        </p>
+    </div>
+
+    <div class="of2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti 
+            exercitationem quia earum eius nemo nihil voluptatibus animi necessitatibus odit, 
+            quis, voluptate assumenda accusamus ipsum numquam, corrupti recusandae accusantium 
+            officiis tempora placeat harum in quaerat. Perferendis eaque, quasi minus fugit, 
+            eum neque voluptate tenetur inventore reprehenderit iste molestias odio architecto.
+        </p>
+    </div>
+
+    <div class="of3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti 
+            exercitationem quia earum eius nemo nihil voluptatibus animi necessitatibus odit, 
+            quis, voluptate assumenda accusamus ipsum numquam, corrupti recusandae accusantium 
+            officiis tempora placeat harum in quaerat. Perferendis eaque, quasi minus fugit, 
+            eum neque voluptate tenetur inventore reprehenderit iste molestias odio architecto.
+        </p>
+    </div>
+
+    <br style="clear: left;"><br>
+
+    <!-- float -->
+
+    <div class="float" >
+        <img src="https://th.bing.com/th/id/OIP.oLbOPl4C60hu4GGOlyLLXQHaHa?rs=1&pid=ImgDetMain" alt="It is an image" width="200" height="200px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores, voluptas autem 
+            quae voluptatem sapiente nulla consequuntur nam molestias magnam, maiores similique earum
+    </div>
+
+    <!-- Combinator -->
+
+    <div class="com1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+    </div>
+
+    <div class="com2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+
+    <div class="com3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <input type="text">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+
+    <!-- Pseudo Elements -->
+
+    <div class="pseudo1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum?</p>
+    </div>
+
+    <div class="pseudo2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, omnis blanditiis, 
+            illum quaerat quasi aperiam velit molestias itaque quisquam voluptate, sit nostrum! 
+            Recusandae voluptatum beatae quae maxime mollitia a suscipit!quis, voluptate assumenda 
+            accusamus ipsum numquam, corrupti recusandae accusantium officiis tempora placeat harum 
+            in quaerat. Perferendis eaque, quasi minus fugit, eum neque voluptate tenetur inventore 
+            reprehenderit iste molestias odio architecto.
+        </p>
+    </div>
+
+</body>
+</html>

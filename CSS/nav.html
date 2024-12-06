@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        ul{
+            top: 0px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            position: fixed;
+            width: 100%;
+        }
+        li{
+            font-size: 22px;
+            float: left;
+            border-right: 1px solid lightslategray;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 20px 30px;
+        }
+        li a.active{
+            background-color: green;
+        }
+        li a:hover:not(.active){
+            background-color: darkgray;
+            color: black;
+        }
+        li:last-child{
+            float: right;
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About" >About</a></li>
+    </ul>
+
+    <div style="height: 1000px; margin-top: 100px;">
+        <h1>HTML</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
+            placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
+            perspiciatis fugiat, molestias sed voluptates iste qui error ducimus laboriosam 
+            optio vel repellendus? Voluptatibus consectetur saepe exercitationem veritatis 
+            nesciunt quos id, iusto voluptas quisquam tempora cupiditate, eos excepturi! Nostrum 
+            reprehenderit, veritatis excepturi voluptas labore velit sed, eveniet facere nulla qui 
+            laboriosam debitis? Magni quod iste vero dicta vitae perspiciatis saepe qui optio 
+            provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
+            ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
+            quod repellat eum tempora nisi?
+        </p>
+    </div>
+</body>
+</html>
