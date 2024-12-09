@@ -36,6 +36,27 @@
             float: right;
             border-right: none;
         }
+        li div{
+            position: absolute;
+            display: none;
+            background-color: lightgray;
+            width: 200px;
+        }
+        li div a{
+            padding: 5px 30px;
+            border-bottom: white;
+        }
+        li.drop:hover .dropdown{
+            display: block;
+        }
+        .bgimg{
+            background-image: url('https://i.pinimg.com/736x/34/cb/b9/34cbb9329d194cae02d75c7337bd19d4.jpg') ,url('https://media.rainpos.com/Checker/ESS4673-G.jpg');
+            background-repeat: no-repeat, repeat;
+            background-size: 100px 100px, cover;
+            background-position: right bottom, left top;
+            color: rgb(255, 0, 0);
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
@@ -43,11 +64,17 @@
     <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#news">News</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li class="drop"><a href="#Contact">Contact
+            <div class="dropdown">
+                <a href="">Link#1</a>
+                <a href="">Link#2</a>
+                <a href="">Link#3</a>
+            </div>
+        </a></li>
         <li><a href="#About" >About</a></li>
     </ul>
 
-    <div style="height: 1000px; margin-top: 100px;">
+    <div style="height: 200px; margin-top: 100px;">
         <h1>HTML</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti praesentium natus 
             placeat dolor. Sapiente asperiores molestiae debitis quis, iure fugit repellat, 
@@ -59,6 +86,13 @@
             provident culpa maxime at magnam autem aliquid accusamus expedita aperiam, odit 
             ratione tenetur esse laborum dolores. Quam fuga repellendus possimus tempore neque 
             quod repellat eum tempora nisi?
+        </p>
+    </div>
+
+    <div class="bgimg">
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id laboriosam doloribus 
+            officia quo sunt nesciunt delectus nisi distinctio velit.
         </p>
     </div>
 </body>

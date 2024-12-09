@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gra{
+            display: flex;
+            gap: 20px;
+        }
+        .gra1{
+            height: 200px;
+            width: 200px;
+            border-radius: 100px/30px;
+            background-image: linear-gradient(to top,red,yellow,green);
+        }
+        .gra2{
+            height: 200px;
+            width: 200px;
+            background-image: repeating-linear-gradient(red ,yellow 10%,green 20%);  
+        }
+        .gra3{
+            height: 200px;
+            width: 200px;
+            border-radius: 30px/100px;
+            background-image: repeating-linear-gradient(45deg,red ,yellow 10%,green 20%);  
+        }
+        .rad{
+            display: flex;
+            gap: 20px;
+        }
+        .rad1{
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        .rad2{
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(red 5%,yellow 10%,green 20%);
+        }
+        .rad3{
+            height: 200px;
+            width: 200px;
+            border-radius: 10px 60px 10px 60px;
+            background-image: repeating-radial-gradient(red 5%,yellow 10%,green 20%);
+        }
+        .con{
+            display: flex;
+            gap: 20px;
+        }
+        .con1{
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red,yellow,green);
+        }
+        .con2{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: conic-gradient(red 0,red 90deg,yellow 90deg,yellow 180deg,orange 180deg, orange 270deg,green 270deg,green);
+        }
+        .con3{
+            height: 200px;
+            width: 200px;
+            border-radius: 60px 10px 60px 10px;
+            background-image: repeating-conic-gradient(red 5%,yellow 10%,green 15%);
+        }
+        .shodow h1{
+            text-shadow: 2px 2px 2px blue;
+        }
+        .shodow h2{
+            text-shadow: -1px 0 black,0 1px black,1px 0 black,0 -1px black;
+            color: yellow;
+            font-size: 30px;
+        }
+        .shodow h3{
+            text-shadow: 2px 2px 4px #000000;
+            color: white;
+            font-size: 30px;
+        }
+        .trans{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            transition: background-color 3s, border 3s, height 3s, width 3s, transform 3s, border-radius 3s;
+        }
+        .trans:hover{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border: 5px solid black;
+            transform: rotate(45deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gra">
+        <div class="gra1"></div>
+        <div class="gra2"></div>
+        <div class="gra3"></div>
+    </div>
+
+    <br><br>
+
+    <div class="rad">
+        <div class="rad1"></div>
+        <div class="rad3"></div>
+        <div class="rad2"></div>
+    </div>
+
+    <br><br>
+
+    <div class="con">
+        <div class="con2"></div>
+        <div class="con1"></div>
+        <div class="con3"></div>
+    </div>
+
+    <br><br>
+
+    <div class="shodow">
+        <h1>H T M L</h1>
+        <h2>C S S</h2>
+        <h3>JavaScript</h3>
+    </div>
+
+    <center>
+        <div class="trans"></div>
+    </center>
+
+</body>
+</html>
