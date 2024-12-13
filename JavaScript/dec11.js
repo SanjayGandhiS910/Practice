@@ -37,9 +37,12 @@ const obj1 = {
     age : 23
 };
 
-const arr1 = Object.values(obj1);
+// console.log(obj1["name"]);
 
-document.getElementById("object1").innerHTML = arr1;
+
+const newArr = Object.values(obj1)
+
+document.getElementById("object1").innerHTML = newArr;
 
 
 
