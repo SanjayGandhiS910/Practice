@@ -77,3 +77,6 @@ document.getElementById("unorderlist").innerHTML = html;
 const g = []
 g["name"]="Sanjay";
 console.log(g.length)
+
+g.push("Sanjay");
+g.shift(45);
